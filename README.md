@@ -4,10 +4,10 @@ This project is a dynamic and interactive clock that lets you toggle between dig
 
 ## Features
 
-- **Digital and Analog Modes:** Easily switch between digital and analogue clock displays.
-- **Light/Dark Mode:** Toggle between a light or dark theme for better usability.
-- **Smooth Animations:** Ensures seamless transitions and accurate hand movements on the analogue clock.
-- **Responsive Design:** Adapts beautifully to different screen sizes.
+- **Digital and Analog Modes:** easily switch between digital and analogue clock displays.
+- **Light/Dark Mode:** toggle between a light or dark theme for better usability.
+- **Smooth Animations:** ensures seamless transitions and accurate hand movements on the analogue clock.
+- **Responsive Design:** adapts beautifully to different screen sizes.
 
 ---
 
