@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.light-mode {
+    background: #fff;
+    color: #000;
+}
+
+.dark-mode {
+    background: #000;
+    color: #fff;
+}
+
+.clock-container {
+    text-align: center;
+}
+
+.digital-clock {
+    font-size: 6rem;
+    /* Aumenté el tamaño */
+    margin: 40px 0;
+}
+
+.analog-clock {
+    width: 400px;
+    height: 400px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    margin: 40px auto;
+    background: #1e3c72;
+}
+
+.light-mode .analog-clock {
+    background: #fff;
+    border-color: #000;
+}
+
+.dark-mode .analog-clock {
+    background: #000;
+    border-color: #fff;
+}
+
+.hand {
+    position: absolute;
+    height: 2px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0%;
+    transition: transform 0.1s ease-in-out;
+}
+
+.light-mode .hand {
+    background: #000;
+}
+
+.hour-hand {
+    width: 25%;
+    height: 6px;
+}
+
+.minute-hand {
+    width: 40%;
+    height: 4px;
+}
+
+.second-hand {
+    width: 45%;
+    height: 2px;
+    background: #ff6f61;
+}
+
+.light-mode .second-hand {
+    background: #ff6f61;
+}
+
+.toggle-button,
+.mode-button {
+    margin: 20px;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff6f61;
+    color: #fff;
+    transition: background 0.3s ease;
+    width: 160px;
+    height: 50px;
+}
+
+.light-mode .toggle-button,
+.light-mode .mode-button {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
