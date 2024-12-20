@@ -27,10 +27,9 @@ function updateAnalogClock() {
     const hoursDegrees = ((hours % 12) / 12) * 360 + (minutes / 60) * 30 - 90;
     const minutesDegrees = (minutes / 60) * 360 + (seconds / 60) * 6 - 90;
 
-    // Calculamos la rotación de la manecilla de los segundos, pero evitamos reinicios bruscos
     const totalTime = (seconds + milliseconds / 1000) * 6;
 
-    secondHand.style.transition = 'none'; // Eliminamos la transición para evitar saltos
+    secondHand.style.transition = 'none'; 
     secondHand.style.transform = `rotate(${totalTime}deg)`;
     hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
     minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
